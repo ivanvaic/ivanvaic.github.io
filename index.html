@@ -4,29 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ivan Vaic - Portfolio</title>
-  
+
   <!-- Povezivanje sa CSS fajlom -->
   <link rel="stylesheet" href="style.css" />
+  
+  <!-- Animacija za učitavanje stranice -->
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="container">
+  <div class="container">
+    <!-- Header -->
+    <header>
       <h1>Ivan Vaic</h1>
       <p class="subtitle">Web Developer | Passionate about learning & growing in IT</p>
-    </div>
-  </header>
+    </header>
 
-  <!-- About Section -->
-  <section class="about">
-    <div class="container">
+    <!-- About Section -->
+    <section class="about">
       <h2>About Me</h2>
       <p>I am a self-taught web developer with a strong interest in learning new technologies and building functional, responsive websites. I'm passionate about problem-solving and always eager to enhance my skills.</p>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section class="skills">
-    <div class="container">
+    <!-- Skills Section -->
+    <section class="skills">
       <h2>Skills</h2>
       <div class="skill-list">
         <div class="skill-item">
@@ -45,12 +50,10 @@
           <h3>Git & GitHub</h3>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section class="projects">
-    <div class="container">
+    <!-- Projects Section -->
+    <section class="projects">
       <h2>Projects</h2>
       <div class="project-card">
         <h3>Personal Portfolio Website</h3>
@@ -60,23 +63,19 @@
         <h3>Coffee Shop Landing Page</h3>
         <p>Developed a simple, responsive landing page for a fictional coffee shop, focusing on layout and mobile-first design.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <div class="container">
+    <!-- Contact Section -->
+    <section class="contact">
       <h2>Contact Me</h2>
       <p>Feel free to reach out via email at <a href="mailto:ivan.vaic22@gmail.com">ivan.vaic22@gmail.com</a></p>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
+    <!-- Footer -->
+    <footer>
       <p>&copy; 2025 Ivan Vaic. All rights reserved.</p>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <!-- Povezivanje sa JavaScript fajlom -->
   <script src="app.js"></script>

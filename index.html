@@ -5,47 +5,219 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ivan Vaic - Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; }
-    h1, h2 { color: #333; }
-    a { color: #0066cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .project { margin-bottom: 20px; }
+    /* General reset for styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Container for center alignment */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Main header styling */
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #1a73e8;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    /* Section styling */
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      text-align: center;
+      color: #333;
+    }
+
+    /* Skills section layout */
+    ul.skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    ul.skills li {
+      background-color: #fff;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 150px;
+      text-align: center;
+    }
+
+    ul.skills li h3 {
+      font-size: 1.3rem;
+      color: #333;
+    }
+
+    /* Project cards */
+    .project-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .project-card h3 {
+      font-size: 1.6rem;
+      color: #1a73e8;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Contact section */
+    .contact {
+      background-color: #1a73e8;
+      padding: 30px;
+      border-radius: 8px;
+      color: white;
+      text-align: center;
+    }
+
+    .contact a {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 20px;
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      .skills {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project-card {
+        margin: 10px 0;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Ivan Vaic</h1>
-  <p><strong>Location:</strong> Belgrade, Serbia</p>
-  <p><strong>Contact:</strong> 0691999125 | <a href="mailto:ivan.vaic22@gmail.com">ivan.vaic22@gmail.com</a></p>
-  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ivan-vaic-685b89276?trk=contact-info" target="_blank">ivan-vaic</a></p>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Ivan Vaic</h1>
+      <p>Web Developer | Passionate about learning & growing in IT</p>
+    </header>
 
-  <h2>About Me</h2>
-  <p>Motivated self-taught web developer passionate about learning and growing in the IT industry. Currently focused on building foundational skills in HTML, CSS, and JavaScript.</p>
+    <!-- About Section -->
+    <section>
+      <h2>About Me</h2>
+      <p>I am a self-taught web developer with a strong interest in learning new technologies and building functional, responsive websites. I'm passionate about problem-solving and always eager to enhance my skills.</p>
+    </section>
 
-  <h2>Projects</h2>
-  <div class="project">
-    <h3>Personal Portfolio Website</h3>
-    <p>A responsive website showcasing my skills and projects using HTML, CSS, and basic JavaScript.</p>
+    <!-- Skills Section -->
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>
+          <h3>HTML</h3>
+        </li>
+        <li>
+          <h3>CSS</h3>
+        </li>
+        <li>
+          <h3>JavaScript</h3>
+        </li>
+        <li>
+          <h3>Responsive Design</h3>
+        </li>
+        <li>
+          <h3>Git & GitHub</h3>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>Designed a portfolio website to showcase my skills, projects, and achievements using HTML, CSS, and basic JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Coffee Shop Landing Page</h3>
+        <p>Developed a simple, responsive landing page for a fictional coffee shop, focusing on layout and mobile-first design.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out via email at <a href="mailto:ivan.vaic22@gmail.com">ivan.vaic22@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Ivan Vaic. All rights reserved.</p>
+    </footer>
   </div>
-  <div class="project">
-    <h3>Coffee Shop Landing Page</h3>
-    <p>Simple landing page designed for a fictional coffee shop, emphasizing layout and mobile responsiveness.</p>
-  </div>
-
-  <h2>Skills</h2>
-  <ul>
-    <li>HTML & CSS (basic)</li>
-    <li>JavaScript (beginner)</li>
-    <li>Responsive Web Design</li>
-    <li>Git & GitHub (basic)</li>
-  </ul>
-
-  <h2>Languages</h2>
-  <ul>
-    <li>Serbian – Native</li>
-    <li>English – Intermediate (B1/B2)</li>
-  </ul>
-
-  <h2>Contact Me</h2>
-  <p>If you want to get in touch, feel free to <a href="mailto:ivan.vaic22@gmail.com">email me</a>.</p>
 </body>
 </html>
